@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	/*Primary*/
+
+   --Moderate-violet: hsl(263, 55%, 52%);
+   --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+   --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+   --White: hsl(0, 0%, 100%);
+
+  /*Neutral*/
+
+   --Light-gray: hsl(0, 0%, 81%);
+   --Light-grayish-blue: hsl(210, 46%, 95%);
+
+   /*Font-Size*/
+
+   --lg-xm: 500;
+   --lg-sm: 600;
+
+}
+
+body{
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h3{
+	font-weight: var(--lg-sm);
+	color: var(--White);
+}
+
+h4{
+	font-weight: var(--lg-xm);
+	color: var(--White);
+}
+
+p{
+	font-size: 13px;
+	font-weight: var(--lg-xm);
+	opacity: 70%;
+	color: var(--White);
+}
+
+main{
+	padding: 125px;
+	background: var(--Light-grayish-blue);
+}
+
+button{
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+img{
+	border-radius: 57px;
+}
+
+.first-container{ 
+    background-color: var(--Moderate-violet);
+	padding: 16px ;
+	background-image: url('C:/Users/user/Html Practice/FrontEnd Mentor/testimonials-grid-section-main/testimonials-grid-section-main/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 5px;
+}
+
+.first-container p{
+	margin-top: 8px;
+}
+
+.second-container p{
+	margin-top: 8px;
+}
+
+.third-container p{
+	margin-top: 8px;
+}
+
+.fourth-container p{
+	margin-top: 8px;
+}
+
+.fifth-container p{
+	margin-top: 8px;
+	color: black;
+}
+
+.container{
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+}
+
+.first-flex-1{
+	display: flex;
+	gap: 1rem;
+}
+
+.first-flex-2{
+	display: flex;
+	gap: 1rem;
+	margin-top: 20px;
+}
+
+
+.second-flex{
+	flex-basis: 80%;
+}
+
+.title-flex{
+	display: flex;
+	gap: 1rem;
+}
+
+.first-flex_title{
+	margin-top: 7px;
+}
+
+.second-container{ 
+    background-color: var(--Very-dark-grayish-blue);
+	padding: 16px ;
+    border-radius: 5px;
+    flex-basis: 160%;
+}
+
+.third-container{ 
+    background-color: var(--White);
+	padding: 16px ;
+    border-radius: 5px;
+   border: 1px var(--White) solid;
+}
+
+.third-container h3,h4{
+	color: var(--Very-dark-grayish-blue);
+}
+
+.third-container p{
+	color: var(--Light-gray);
+}
+
+.fifth-container h3,h4{
+	color: var(--Very-dark-grayish-blue);
+}
+
+.fifth-container p{
+	color: var(--Light-gray);
+}
+
+.first-flex_title h4{
+	color: #fff;
+}
+
+.second-flex_title h4{
+	color: #fff;
+}
+
+.fourth-flex_title h4{
+	color: #fff;
+}
+
+.fourth-container{ 
+	padding: 16px;
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: 7px;
+}
+
+.fifth-container{ 
+    background-color: var(--White);
+	padding: 16px ;
+    border-radius: 5px;
+    border: 1px var(--White) solid;
+}
+
+.title-paragraph{
+	opacity: 50%;
+	color: var(--White);
+}
+
+.attribution{
+	text-align: center;
+	align-items: center;
+	color: var(--Very-dark-grayish-blue);
+	margin-top: 1rem;
+}
+
+.attribution a{
+	text-decoration: none;
+	color: var(--Very-dark-grayish-blue);
+	opacity: 0.5;
+}
+
+.attribution a:hover{
+   opacity: 2;
+   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px){
+    main{
+    	padding: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .first-flex{
+      flex-basis: 190%;
+    }
+
+    img{
+    	border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .container{
+    	display: block;
+    }
+
+     .first-flex-1{
+    	display: block;
+    }
+
+    .first-flex-2{
+    	display: block;
+    }
+
+    .gap{
+    	margin: 15px 0 15px;
+    }
+}
